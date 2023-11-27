@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B28024F12B155B3E0008AE94 /* ValidationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28024F02B155B3E0008AE94 /* ValidationHelper.swift */; };
 		B2E01C322B06274600D75014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E01C312B06274600D75014 /* AppDelegate.swift */; };
 		B2E01C342B06274600D75014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E01C332B06274600D75014 /* SceneDelegate.swift */; };
 		B2E01C362B06274600D75014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E01C352B06274600D75014 /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B28024F02B155B3E0008AE94 /* ValidationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationHelper.swift; sourceTree = "<group>"; };
 		B2E01C2E2B06274600D75014 /* iOSStarterTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStarterTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E01C312B06274600D75014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2E01C332B06274600D75014 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B28024F22B155B4C0008AE94 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B28024F02B155B3E0008AE94 /* ValidationHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		B2E01C252B06274600D75014 = {
 			isa = PBXGroup;
 			children = (
@@ -111,9 +121,9 @@
 				B2E01C332B06274600D75014 /* SceneDelegate.swift */,
 				B2E01C352B06274600D75014 /* ViewController.swift */,
 				B2E01C632B062AD100D75014 /* Screens */,
-				B2E01C3A2B06274800D75014 /* Assets.xcassets */,
-				B2E01C3C2B06274800D75014 /* LaunchScreen.storyboard */,
+				B2E01C732B06A74500D75014 /* Supporting Files */,
 				B2E01C3F2B06274800D75014 /* Info.plist */,
+				B28024F22B155B4C0008AE94 /* Helpers */,
 			);
 			path = iOSStarterTemplate;
 			sourceTree = "<group>";
@@ -153,6 +163,15 @@
 				B2E01C6B2B0690B400D75014 /* HomeViewModel.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		B2E01C732B06A74500D75014 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2E01C3A2B06274800D75014 /* Assets.xcassets */,
+				B2E01C3C2B06274800D75014 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E01C622B062AC400D75014 /* Coordinator.swift in Sources */,
+				B28024F12B155B3E0008AE94 /* ValidationHelper.swift in Sources */,
 				B2E01C6A2B0690A000D75014 /* HomeView.swift in Sources */,
 				B2E01C362B06274600D75014 /* ViewController.swift in Sources */,
 				B2E01C6C2B0690B400D75014 /* HomeViewModel.swift in Sources */,
@@ -377,7 +397,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -440,7 +460,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

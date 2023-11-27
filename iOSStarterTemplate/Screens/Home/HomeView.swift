@@ -12,7 +12,6 @@ struct HomeView: View {
     
     var body: some View {
         Text("Hello, World! Counter: \(viewModel.counter)")
-        
         Button("Increment") {
             viewModel.increment()
         }

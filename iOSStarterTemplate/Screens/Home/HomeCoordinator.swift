@@ -11,6 +11,7 @@ public class HomeCoordinator: Coordinator {
     public var parentCoordinator: Coordinator?
     public var childCoordinators: [Coordinator] = []
     public var rootViewController: UIViewController?
+
     private lazy var viewModel = HomeViewModel()
     
     public func start() {
