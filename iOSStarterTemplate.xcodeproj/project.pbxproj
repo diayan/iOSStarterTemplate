@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B27F6C1D2B44695500063745 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B27F6C1C2B44695500063745 /* KeychainSwift */; };
 		B28024F12B155B3E0008AE94 /* ValidationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28024F02B155B3E0008AE94 /* ValidationHelper.swift */; };
 		B2E01C322B06274600D75014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E01C312B06274600D75014 /* AppDelegate.swift */; };
 		B2E01C342B06274600D75014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E01C332B06274600D75014 /* SceneDelegate.swift */; };
-		B2E01C362B06274600D75014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E01C352B06274600D75014 /* ViewController.swift */; };
 		B2E01C3B2B06274800D75014 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E01C3A2B06274800D75014 /* Assets.xcassets */; };
 		B2E01C3E2B06274800D75014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E01C3C2B06274800D75014 /* LaunchScreen.storyboard */; };
 		B2E01C492B06274800D75014 /* iOSStarterTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E01C482B06274800D75014 /* iOSStarterTemplateTests.swift */; };
@@ -41,11 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B27F6C1E2B457FD900063745 /* CoreiOS */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CoreiOS; path = ../CoreiOS; sourceTree = "<group>"; };
 		B28024F02B155B3E0008AE94 /* ValidationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationHelper.swift; sourceTree = "<group>"; };
 		B2E01C2E2B06274600D75014 /* iOSStarterTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStarterTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E01C312B06274600D75014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2E01C332B06274600D75014 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B2E01C352B06274600D75014 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B2E01C3A2B06274800D75014 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2E01C3D2B06274800D75014 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2E01C3F2B06274800D75014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27F6C1D2B44695500063745 /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,12 +95,45 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		B28024F32B1579D70008AE94 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				B28024F62B157A530008AE94 /* Extensions */,
+				B28024F52B157A3B0008AE94 /* Constants */,
+				B28024F42B157A170008AE94 /* Fonts */,
+				B28024F22B155B4C0008AE94 /* Helpers */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		B28024F42B157A170008AE94 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B28024F52B157A3B0008AE94 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B28024F62B157A530008AE94 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B2E01C252B06274600D75014 = {
 			isa = PBXGroup;
 			children = (
 				B2E01C302B06274600D75014 /* iOSStarterTemplate */,
-				B2E01C472B06274800D75014 /* iOSStarterTemplateTests */,
 				B2E01C512B06274800D75014 /* iOSStarterTemplateUITests */,
+				B2E01C472B06274800D75014 /* iOSStarterTemplateTests */,
+				B27F6C1E2B457FD900063745 /* CoreiOS */,
 				B2E01C2F2B06274600D75014 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,11 +153,10 @@
 			children = (
 				B2E01C312B06274600D75014 /* AppDelegate.swift */,
 				B2E01C332B06274600D75014 /* SceneDelegate.swift */,
-				B2E01C352B06274600D75014 /* ViewController.swift */,
+				B28024F32B1579D70008AE94 /* Global */,
 				B2E01C632B062AD100D75014 /* Screens */,
 				B2E01C732B06A74500D75014 /* Supporting Files */,
 				B2E01C3F2B06274800D75014 /* Info.plist */,
-				B28024F22B155B4C0008AE94 /* Helpers */,
 			);
 			path = iOSStarterTemplate;
 			sourceTree = "<group>";
@@ -190,6 +223,9 @@
 			dependencies = (
 			);
 			name = iOSStarterTemplate;
+			packageProductDependencies = (
+				B27F6C1C2B44695500063745 /* KeychainSwift */,
+			);
 			productName = iOSStarterTemplate;
 			productReference = B2E01C2E2B06274600D75014 /* iOSStarterTemplate.app */;
 			productType = "com.apple.product-type.application";
@@ -262,6 +298,9 @@
 				Base,
 			);
 			mainGroup = B2E01C252B06274600D75014;
+			packageReferences = (
+				B27F6C1B2B44695500063745 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			productRefGroup = B2E01C2F2B06274600D75014 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -307,7 +346,6 @@
 				B2E01C622B062AC400D75014 /* Coordinator.swift in Sources */,
 				B28024F12B155B3E0008AE94 /* ValidationHelper.swift in Sources */,
 				B2E01C6A2B0690A000D75014 /* HomeView.swift in Sources */,
-				B2E01C362B06274600D75014 /* ViewController.swift in Sources */,
 				B2E01C6C2B0690B400D75014 /* HomeViewModel.swift in Sources */,
 				B2E01C652B062AEA00D75014 /* RootCoordinator.swift in Sources */,
 				B2E01C322B06274600D75014 /* AppDelegate.swift in Sources */,
@@ -651,6 +689,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B27F6C1B2B44695500063745 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B27F6C1C2B44695500063745 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B27F6C1B2B44695500063745 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B2E01C262B06274600D75014 /* Project object */;
 }
